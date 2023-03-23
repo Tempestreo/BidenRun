@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b7d4f2e5e8e5b4e128b2f732f39a1f54
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_WinEvent: {instanceID: 0}
+  - m_LoseEvent: {instanceID: 0}
+  - m_CurrentLevel: {fileID: 11400000, guid: 1485d17388e35cc49be9913f53699255, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
