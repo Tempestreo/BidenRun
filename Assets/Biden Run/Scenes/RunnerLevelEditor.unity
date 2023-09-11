@@ -5865,6 +5865,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073779592}
   m_CullTransparentMesh: 1
+--- !u!1001 &1130978618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 115109344174836671, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_Name
+      value: HeartParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0031214
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 600.2235
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146765775792131739, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e81c5ac24ab55c24385286cc0a146d7f, type: 3}
 --- !u!1 &1151660447
 GameObject:
   m_ObjectHideFlags: 0
@@ -12159,6 +12228,12 @@ PrefabInstance:
       objectReference: {fileID: 167581307}
     - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
         type: 3}
+      propertyPath: poopPFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: fe32cddb01df302419a3521264387433,
+        type: 3}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
       propertyPath: bidenAge
       value: 
       objectReference: {fileID: 1673435272}
@@ -12167,6 +12242,18 @@ PrefabInstance:
       propertyPath: bidenWon
       value: 
       objectReference: {fileID: 987013218}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
+      propertyPath: crashPFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: 93b958d47450e0241a8a828d16bc0f4b,
+        type: 3}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
+      propertyPath: heartPFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: e81c5ac24ab55c24385286cc0a146d7f,
+        type: 3}
     - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
         type: 3}
       propertyPath: imgEmoji
@@ -12184,9 +12271,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
         type: 3}
+      propertyPath: madcatPFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: b37db234e7e5b5847aee323086a99e61,
+        type: 3}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
+      propertyPath: madmanPFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: 86d8a2f971a039a42b3cfc02239622ce,
+        type: 3}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
       propertyPath: pnlGameOver
       value: 
       objectReference: {fileID: 2096635589}
+    - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
+        type: 3}
+      propertyPath: handshakePFX
+      value: 
+      objectReference: {fileID: 5585042871184320410, guid: 18a0a260851abcf459cc378f15285ddd,
+        type: 3}
     - target: {fileID: 1799488454039662849, guid: eeba9a4fda2ded44384fd6abc6f1bb53,
         type: 3}
       propertyPath: txtBidenVote

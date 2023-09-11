@@ -40,12 +40,13 @@ public class VoteManager : MonoBehaviour
     public Sprite imgMadcat;
     public Sprite imgCrash;
 
-    public VisualEffect handshakeVFX;
-    public VisualEffect heartVFX;
-    public VisualEffect madmanVFX;
-    public VisualEffect poopVFX;
-    public VisualEffect madcatVFX;
-    public VisualEffect crashVFX;
+    public ParticleSystem handshakePFX;
+    public ParticleSystem heartPFX;
+    public ParticleSystem madmanPFX;
+    public ParticleSystem poopPFX;
+    public ParticleSystem madcatPFX;
+    public ParticleSystem crashPFX;
+
     public VisualEffect crashAnimVFX;
 
     public TextMeshProUGUI txtTrumpVote;
@@ -120,8 +121,8 @@ public class VoteManager : MonoBehaviour
             audio.clip = collectibleSound;
             audio.Play();
             imgEmoji.sprite = imgHandshake;
-            handshakeVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
-            Instantiate(handshakeVFX);
+            handshakePFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
+            Instantiate(handshakePFX);
             RightMove();
         }
         if (other.tag == "cat")
@@ -129,8 +130,8 @@ public class VoteManager : MonoBehaviour
             audio.clip = happyCatSound;
             audio.Play();
             imgEmoji.sprite = imgHeart;
-            heartVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
-            Instantiate(heartVFX);
+            heartPFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
+            Instantiate(heartPFX);
             RightMove(); 
         }
         if (other.tag == "poop")
@@ -138,8 +139,8 @@ public class VoteManager : MonoBehaviour
             audio.clip = poopSound;
             audio.Play();
             imgEmoji.sprite = imgPoop;
-            poopVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z+5);
-            Instantiate(poopVFX);
+            poopPFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z+5);
+            Instantiate(poopPFX);
             WrongMove(); 
         }
         if (other.tag == "bike")
@@ -147,8 +148,8 @@ public class VoteManager : MonoBehaviour
             audio.clip = crashSound;
             audio.Play();
             imgEmoji.sprite = imgCrash;
-            crashVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
-            Instantiate(crashVFX);
+            crashPFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
+            Instantiate(crashPFX);
             crashAnimVFX.transform.position = new Vector3(other.gameObject.transform.position.x,other.gameObject.transform.position.y+1,other.gameObject.transform.position.z) ;
             Instantiate(crashAnimVFX);
             Destroy(other.gameObject);
@@ -188,8 +189,8 @@ public class VoteManager : MonoBehaviour
         audio.clip = madManSound;
         audio.Play();
         imgEmoji.sprite = imgMadman;
-        madmanVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
-        Instantiate(madmanVFX);
+        madmanPFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
+        Instantiate(madmanPFX);
         WrongMove();
     }
     public void MissCatPetting()
@@ -197,8 +198,8 @@ public class VoteManager : MonoBehaviour
         audio.clip = madCatSound;
         audio.Play();
         imgEmoji.sprite = imgMadcat;
-        madcatVFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
-        Instantiate(madcatVFX);
+        madcatPFX.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z + 5);
+        Instantiate(madcatPFX);
         WrongMove();
     }
 
